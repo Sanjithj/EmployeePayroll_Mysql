@@ -32,6 +32,8 @@ public static void main(String[] args) {
     SELECT MIN(salary) from employee_payroll where gender = "Female" group by gender;
     SELECT MAX(salary) from employee_payroll where gender = "Female" group by gender;
     SELECT COUNT(salary) from employee_payroll where gender = "Female" group by gender;
+    
+    ALTER TABLE employee_payroll add column department varchar(25);
 }
 
 }
