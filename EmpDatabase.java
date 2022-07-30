@@ -20,6 +20,19 @@ public static void main(String[] args) {
     
     ALTER TABLE employee_payroll add column gender varchar(20);
     UPDATE employee_payroll set gender = "Male" where name='Ragav';
+    
+    SELECT SUM(salary) from employee_payroll where gender = "Male" group by gender;
+    SELECT AVG(salary) from employee_payroll where gender = "Male" group by gender;
+    SELECT MIN(salary) from employee_payroll where gender = "Male" group by gender;
+    SELECT MAX(salary) from employee_payroll where gender = "Male" group by gender;
+    SELECT COUNT(salary) from employee_payroll where gender = "Male" group by gender;
+    
+    SELECT SUM(salary) from employee_payroll where gender = "Female" group by gender;
+    SELECT AVG(salary) from employee_payroll where gender = "Female" group by gender;
+    SELECT MIN(salary) from employee_payroll where gender = "Female" group by gender;
+    SELECT MAX(salary) from employee_payroll where gender = "Female" group by gender;
+    SELECT COUNT(salary) from employee_payroll where gender = "Female" group by gender;
+}
 
 }
 }
