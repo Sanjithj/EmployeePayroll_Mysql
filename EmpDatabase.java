@@ -15,5 +15,7 @@ public static void main(String[] args) {
     
     SELECT * FROM employee_payroll;
     
-   
+    SELECT salary FROM employee_payroll where name = "Sanjith";
+    SELECT * FROM employee_payroll where start_date BETWEEN cast("2022-01-01" AS DATE) AND DATE(now());
+}
 }
