@@ -7,5 +7,7 @@ public static void main(String[] args) {
 	create database Employee_Payroll;
     show databases;
     use Employee_PayRoll;
+    
+    create table employee_payroll( id int NOT NULL AUTO_INCREMENT PRIMARY KEY,name varchar(30),salary INT,start_date DATE NOT NULL);
 }
 }
