@@ -36,5 +36,13 @@ public static void main(String[] args) {
     ALTER TABLE employee_payroll add column department varchar(25);
     
     ALTER TABLE employee_payroll add column Basic_Pay int, add column Deductions int,add column Taxable_Pay int,add column Income_Tax int,add column Net_Pay int;
+
+    ALTER TABLE employee_payroll add column phone int;
+    ALTER TABLE employee_payroll add column address  varchar(21);
+
+    insert into employee_payroll(name,salary,start_date,gender,phone,address,department,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay) values("Terissa",65000,"2022-08-11",'Female',87555522,"Bangalore",'Sales',65000,300,500,100,600);
+    insert into employee_payroll(name,salary,start_date,gender,phone,address,department,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay) values("Terissa",65000,"2022-08-11",'Female',954461156,"Bangalore",'Marketing',65000,300,500,100,600);
+
+    SELECT * FROM employee_payroll where name = "Terissa";
 }
 }
