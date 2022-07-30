@@ -34,7 +34,7 @@ public static void main(String[] args) {
     SELECT COUNT(salary) from employee_payroll where gender = "Female" group by gender;
     
     ALTER TABLE employee_payroll add column department varchar(25);
-}
-
+    
+    ALTER TABLE employee_payroll add column Basic_Pay int, add column Deductions int,add column Taxable_Pay int,add column Income_Tax int,add column Net_Pay int;
 }
 }
